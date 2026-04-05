@@ -35,6 +35,8 @@
       font-weight: 300;
       line-height: 1.8;
       overflow-x: hidden;
+      word-break: auto-phrase;
+      overflow-wrap: break-word;
     }
 
     body::before {
@@ -146,11 +148,12 @@
 
     .hero-mascot {
       position: absolute;
-      bottom: -8px; right: -8px;
-      width: min(170px, 36vw);
+      bottom: 56px; right: 12px;
+      width: min(100px, 22vw);
       opacity: 0;
       animation: fadeUp 0.9s 1.0s ease forwards;
       pointer-events: none;
+      z-index: 0;
     }
 
     .scroll-hint {
@@ -297,8 +300,9 @@
     .product-card-body { padding: 20px 18px 24px; }
     .product-card-tag {
       display: inline-block; background: rgba(201,148,58,0.2);
-      color: var(--gold-light); font-size: 0.68rem; letter-spacing: 0.08em;
+      color: var(--gold-light); font-size: 0.62rem; letter-spacing: 0.05em;
       padding: 3px 10px; border-radius: 100px; margin-bottom: 10px;
+      white-space: nowrap;
     }
     .product-card-name {
       font-family: 'Shippori Mincho', serif; font-weight: 700;
@@ -357,8 +361,8 @@
     <p class="hero-tagline">
       あなたの「<em>おいしい</em>」が<br>子どもたちの力になる。
     </p>
-    <p class="hero-sub">笠間の栗菓子を買うだけで、地域の子育て支援につながります</p>
-    <a href="https://kasama-kids.stores.jp/" class="cta-btn">食べておうえん →</a>
+    <p class="hero-sub">笠間の栗菓子を買うだけで、<br>地域の子育て支援につながります</p>
+    <a href="https://kasama-kids.stores.jp/" class="cta-btn">応援する →</a>
     <p class="cta-note">売上の5%が教育・子育て支援へ</p>
     <img class="hero-mascot" src="images/chara_clear.png" alt="" aria-hidden="true">
     <div class="scroll-hint">
@@ -372,7 +376,7 @@
     <span class="section-label">What is おうえんまろん</span>
     <h2 class="section-title">「買って応援」という<br>新しい支援のかたち</h2>
     <p class="section-body">
-      善意だけに頼る支援には、限界があります。<br>
+      善意だけに頼る支援には、限界があります。<br><br>
       かさまキッズ応援部は、日本一の栗産地・笠間の特産品を
       "応援アイテム"として販売し、その売上を教育や子育て支援に充てます。<br><br>
       お菓子を買う。誰かに贈る。それだけで、子どもたちの日常を支える
@@ -384,13 +388,13 @@
   <div class="flow-band">
     <div class="flow-inner reveal">
       <span class="section-label">How it works</span>
-      <h2 class="section-title">仕組みはシンプルです</h2>
+      <h2 class="section-title">仕組みはシンプル</h2>
       <div class="flow-steps">
         <div class="flow-step">
           <div class="step-num">1</div>
           <div class="step-content">
             <h3>おうえんまろんを購入する</h3>
-            <p>笠間産の栗を使った焼き菓子。第三回茨城おみやげ大賞を受賞した、本物の味です。</p>
+            <p>日本一の笠間の栗を使用。風味を生かした本物の味。</p>
           </div>
         </div>
         <div class="flow-step">
@@ -494,8 +498,8 @@
   <!-- FINAL CTA -->
   <div class="final-cta reveal">
     <span class="section-label" style="display:block;text-align:center;">さあ、応援しましょう</span>
-    <h2 class="section-title">あなたの一購入が<br>子どもたちの一歩になる</h2>
-    <a href="https://kasama-kids.stores.jp/" class="cta-btn">食べておうえん →</a>
+    <h2 class="section-title">あなたの購入が<br>子どもたちの一歩になる</h2>
+    <a href="https://kasama-kids.stores.jp/" class="cta-btn">販売サイトへ行く →</a>
     <p class="final-cta-note">売上の5%が教育・子育て支援へ直接届きます</p>
   </div>
 

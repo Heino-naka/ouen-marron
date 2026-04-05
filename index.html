@@ -297,7 +297,7 @@
       width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
       background: var(--cream-dark);
     }
-    .product-card-body { padding: 20px 18px 24px; }
+    .product-card-body { padding: 20px 18px 24px; display: flex; flex-direction: column; }
     .product-card-tag {
       display: inline-block; background: rgba(201,148,58,0.2);
       color: var(--gold-light); font-size: 0.62rem; letter-spacing: 0.05em;
@@ -308,8 +308,8 @@
       font-family: 'Shippori Mincho', serif; font-weight: 700;
       font-size: 1rem; color: var(--cream); margin-bottom: 8px;
     }
-    .product-card-desc { font-size: 0.78rem; color: rgba(251,244,230,0.58); line-height: 1.85; margin-bottom: 14px; }
-    .product-card-price { font-family: 'Shippori Mincho', serif; color: var(--gold-light); font-size: 0.8rem; }
+    .product-card-desc { font-size: 0.78rem; color: rgba(251,244,230,0.58); line-height: 1.85; margin-bottom: 14px; flex: 1; }
+    .product-card-price { font-family: 'Shippori Mincho', serif; color: var(--gold-light); font-size: 0.8rem; margin-top: auto; }
     .product-card-price strong { font-size: 1.3rem; display: block; }
     .product-note {
       font-size: 0.78rem; color: rgba(251,244,230,0.42);
